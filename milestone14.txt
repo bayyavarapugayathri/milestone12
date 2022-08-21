@@ -1,0 +1,32 @@
+import React from "react";
+ 
+class App extends React.Component {
+
+  constructor(props) {
+
+    super(props);
+
+    this.state = { text: "Welcome!" };
+
+  }
+ 
+
+  componentWillMount() {
+
+    this.setState({
+   text: "GeeksforGeeks",
+
+    });
+
+  }
+ 
+
+  render() {
+
+    return <h1>{this.state.text}</h1>;
+
+  }
+}
+ 
+
+export default App;
